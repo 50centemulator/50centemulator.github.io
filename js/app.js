@@ -45,6 +45,6 @@ function mb3() {
 function nxns() {
 	get_input_nxns();
 	var result_nxns = "如果你觉得" + nation_nxns + "不好，你就去建设它；如果你觉得" + zhengfu_nxns + "不好，你就去" + todo1_nxns + "去" todo2_nxns + "；如果你觉得" + people_nxns + "没素质，就从你开始" + todo3_nxns + "；如果你觉得"+ tongbao_nxns + "愚昧无知，就从你开始"+ xuexi_nxns + "，而不是一味的谩骂、抱怨、逃离。";
-	document.getElementById('result').innerText=result_nxns;
+	document.getElementById('result_nxns').innerText=result_nxns;
 }
 
