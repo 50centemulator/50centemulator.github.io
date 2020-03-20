@@ -38,6 +38,22 @@ function nxns() {
 	var todo3nxns = document.getElementById('todo3_nxns');
 	var tongbaonxns = document.getElementById('tongbao_nxns');
 	var xuexinxns = document.getElementById('xuexi_nxns');
-	var resultnxns = '如果你觉得'+nationnxns.value+'不好，你就去建设它；如果你觉得'+zhengfunxns.value+'不好，你就去'+todo1nxns.value+'去'todo2nxns.value+'；如果你觉得'+peoplenxns.value+'没素质，就从你开始'+ todo3nxns.value+'；如果你觉得'+tongbaonxns.value+'愚昧无知，就从你开始'+xuexinxns.value+'，而不是一味的谩骂、抱怨、逃离。';
+	var resultnxns = "如果你觉得'+nationnxns.value+'不好，你就去建设它；如果你觉得'+zhengfunxns.value+'不好，你就去'+todo1nxns.value+'去'todo2nxns.value+'；如果你觉得'+peoplenxns.value+'没素质，就从你开始'+ todo3nxns.value+'；如果你觉得'+tongbaonxns.value+'愚昧无知，就从你开始'+xuexinxns.value+'，而不是一味的谩骂、抱怨、逃离。";
+	var regex1 = new RegExp("\{\{nationnxns\}\}", "g");
+	var regex2 = new RegExp("\{\{nationnxns\}\}", "g");
+	var regex3 = new RegExp("\{\{todo1nxns\}\}", "g");
+	var regex4 = new RegExp("\{\{todo2nxns\}\}", "g");
+	var regex5 = new RegExp("\{\{peoplenxns\}\}", "g");
+	var regex6 = new RegExp("\{\{todo3nxns\}\}", "g");
+	var regex7 = new RegExp("\{\{tongbaonxns\}\}", "g");
+	var regex8 = new RegExp("\{\{xuexinxns\}\}", "g");
+	resultnxns = resultnxns.replace(regex1, nationnxns.value, "g");
+	resultnxns = resultnxns.replace(regex2, zhengfunxns.value, "g");
+	resultnxns = resultnxns.replace(regex3, todo1nxns.value, "g");
+	resultnxns = resultnxns.replace(regex4, todo2nxns.value, "g");
+	resultnxns = resultnxns.replace(regex5, peoplenxns.value, "g");
+	resultnxns = resultnxns.replace(regex6, todo3nxns.value, "g");
+	resultnxns = resultnxns.replace(regex7, tongbaonxns.value, "g");
+	resultnxns = resultnxns.replace(regex8, xuexinxns.value, "g");
 	document.getElementById('result_nxns').innerText=resultnxns;
 }
