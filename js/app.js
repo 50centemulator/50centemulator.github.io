@@ -38,7 +38,7 @@ function nxns() {
 	var todo3nxns = document.getElementById('todo3_nxns');
 	var tongbaonxns = document.getElementById('tongbao_nxns');
 	var xuexinxns = document.getElementById('xuexi_nxns');
-	var resultnxns = "如果你觉得{{nationnxns.value}}不好，你就去建设它；如果你觉得{{zhengfunxns.value}}不好，你就去{{todo1nxns.value}}去'todo2nxns.value}}；如果你觉得{{peoplenxns.value}}没素质，就从你开始{{ todo3nxns.value}}；如果你觉得{{tongbaonxns.value}}愚昧无知，就从你开始{{xuexinxns.value}}，而不是一味的谩骂、抱怨、逃离。";
+	var resultnxns = "如果你觉得{{nationnxns.value}}不好，你就去建设它；如果你觉得{{zhengfunxns.value}}不好，你就去{{todo1nxns.value}}去{{todo2nxns.value}}；如果你觉得{{peoplenxns.value}}没素质，就从你开始{{todo3nxns.value}}；如果你觉得{{tongbaonxns.value}}愚昧无知，就从你开始{{xuexinxns.value}}，而不是一味的谩骂、抱怨、逃离。";
 	var regex1 = new RegExp("\{\{nationnxns\}\}", "g");
 	var regex2 = new RegExp("\{\{nationnxns\}\}", "g");
 	var regex3 = new RegExp("\{\{todo1nxns\}\}", "g");
