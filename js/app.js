@@ -5,6 +5,16 @@ function get_input() {
 	var nation = document.getElementById('nation');
 	var yiyuan = document.getElementById('yiyuan');
 }
+function get_input_nxns() {
+	var nation_nxns = document.getElementById('nation_nxns');
+	var zhengfu_nxns = document.getElementById('zhengfu_nxns');
+	var todo1_nxns = document.getElementById('todo1_nxns');
+	var todo2_nxns = document.getElementById('todo2_nxns');
+	var people_nxns = document.getElementById('people_nxns');
+	var todo3_nxns = document.getElementById('todo3_nxns');
+	var tongbao_nxns = document.getElementById('tongbao_nxns');
+	var xuexi_nxns = document.getElementById('xuexi_nxns');
+}
 function mb1() {
 	get_input();
 	var result1 = "{{nation}}疫情已经失控了，我从{{yiyuan}}的朋友那里打听到，每天无数人问诊，但是没有试剂检测，只能把患者打发回家。{{nation}}老龄人口多，无数患者就自己死在家里了，没有确诊就不算得病，所以{{nation}}才保持这么低的增长，太可怕了。我已经订好回国机票了，关键时刻还是得集中力量办大事呀。";
@@ -32,3 +42,9 @@ function mb3() {
 	result3 = result3.replace(regexy, yiyuan.value, "g");
 	document.getElementById('result').innerText=result3;
 }
+function nxns() {
+	get_input_nxns();
+	var result3 = "如果你觉得" + nation_nxns + "不好，你就去建设它；如果你觉得" + zhengfu_nxns + "不好，你就去" + todo1_nxns + "去" todo2_nxns + "；如果你觉得" + people_nxns + "没素质，就从你开始" + todo3_nxns + "；如果你觉得"+ tongbao_nxns + "愚昧无知，就从你开始"+ xuexi_nxns + "，而不是一味的谩骂、抱怨、逃离。";
+	document.getElementById('result').innerText=result3;
+}
+
